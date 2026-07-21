@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Katrina ❤️ Anniversary</title>
+    <link rel="stylesheet" href="style.css?v=10">
+        <link rel="icon" type="image/jpeg" href="anniversarry-icon.png">
+    <link rel="apple-touch-icon" href="anniversarry-icon.png">
+</head>
+
+<body>
+
+    <div class="background-slider"></div>
+    <div id="ambient-gradient"></div>
+    <div id="particle-field"></div>
+
+    <audio id="music" src="Christina Perri - A Thousand Years.mp3.mp3" loop></audio>
+
+    <!-- ================= START SCREEN / ENVELOPE ================= -->
+    <div id="startScreen">
+        <div class="start-container" id="startContainer">
+            <img src="Bear blow a kiss GIF.gif" class="top-gif" alt="Bear blowing kiss">
+
+            <div class="envelope-stage" id="envelope">
+                <img src="closed-envelope-removebg-preview.png" class="env-img env-closed" alt="Closed envelope">
+                <img src="opened-envelope-removebg-preview.png" class="env-img env-open" alt="Opened envelope">
+            </div>
+            <div class="envelope-hint">tap to open</div>
+
+            <img src="running hugs GIF.gif" class="bottom-gif" alt="Running hugs">
+        </div>
+
+        <div class="letter-reveal" id="letterReveal">
+            <img src="loveLetter-noBackground.png" class="love-letter-img" id="loveLetterImg" alt="Love letter">
+            <div class="continue-hint" id="continueHint">💌 Tap to continue</div>
+        </div>
+    </div>
+
+    <!-- ================= HEADER (universal design) ================= -->
+    <nav id="navbar" class="glass-nav">
+        <div class="nav-inner" id="navInner">
+            <span class="nav-crest">K &amp; J</span>
+            <button data-section="home" class="active-nav" type="button">HOME</button>
+            <button data-section="memories" type="button">MEMORIES</button>
+            <button data-section="gallery" type="button">GALLERY</button>
+            <button data-section="message" type="button">MESSAGE</button>
+            <button data-section="reasons" type="button">REASONS</button>
+        </div>
+        <div class="hamburger" id="hamburger" style="display:none;">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div id="content">
+
+        <!-- ================= HOME ================= -->
+        <section id="home" class="section active fade-up" style="display:block;">
+            <div class="hero-frame float-anim">
+                <svg class="corner-flourish tl" viewBox="0 0 46 46"><path d="M2 44C2 20 20 2 44 2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="2" cy="44" r="3" fill="currentColor"/></svg>
+                <svg class="corner-flourish tr" viewBox="0 0 46 46"><path d="M2 44C2 20 20 2 44 2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="2" cy="44" r="3" fill="currentColor"/></svg>
+                <svg class="corner-flourish bl" viewBox="0 0 46 46"><path d="M2 44C2 20 20 2 44 2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="2" cy="44" r="3" fill="currentColor"/></svg>
+                <svg class="corner-flourish br" viewBox="0 0 46 46"><path d="M2 44C2 20 20 2 44 2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="2" cy="44" r="3" fill="currentColor"/></svg>
+
+                <h1>Happy Anniversary,<br><span class="highlight">Katrina (Babbyy)</span> ❤️</h1>
+                <div class="quotes">
+                    <p>"Among billions of stars, my heart chose you."</p>
+                    <p>"Every star in the universe reminds me of your beauty, Babbyy."</p>
+                    <p>"Katrina, you are the reason my world shines brighter every day."</p>
+                </div>
+
+                <div class="hero-cta">
+                    <button class="btn-royal" data-section="memories" type="button">Our Memories</button>
+                    <button class="btn-royal gold" data-section="message" type="button">Read My Heart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= MEMORIES ================= -->
+        <section id="memories" class="section fade-up" style="display:none;">
+            <h2 class="section-title">Our Constellation of Memories</h2>
+            <div class="section-divider"></div>
+
+            <div style="position:relative;">
+                <div class="constellation-layer" id="constellationLayer"></div>
+
+                <div class="memories-container">
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_01.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_02.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_03.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_04.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_05.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_06.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_07.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_08.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_09.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_10.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_11.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_12.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_13.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_14.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_15.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_16.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_17.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_18.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_19.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_20.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_21.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_22.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_23.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                    <div class="memory-frame"><span class="frame-corner fc-tl"></span><span class="frame-corner fc-tr"></span><span class="frame-corner fc-bl"></span><span class="frame-corner fc-br"></span><img src="AnniversaryPics/anniversary_24.jpg" loading="lazy" onclick="openLightbox(this.src)"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= GALLERY ================= -->
+        <section id="gallery" class="section fade-up" style="display:none;">
+            <h2 class="section-title">Our Universe</h2>
+            <div class="section-divider"></div>
+            <div class="gallery-wrapper">
+                <div class="gallery" id="gallery-container"></div>
+                <canvas class="heart-particle-canvas" id="heart-canvas"></canvas>
+            </div>
+        </section>
+
+        <!-- ================= MESSAGE ================= -->
+        <section id="message" class="section fade-up" style="display:none;">
+            <h2 class="section-title">Words from My Heart</h2>
+            <div class="section-divider"></div>
+            <div class="message-container">
+                <div class="message-card">
+                    <span class="corner-heart ch-tl">❦</span><span class="corner-heart ch-tr">❦</span><span class="corner-heart ch-bl">❦</span><span class="corner-heart ch-br">❦</span>
+                    <p>"Katrina, my Babbyy, every moment with you feels like a beautiful dream I never want to wake up
+                        from. Your smile brightens even my darkest days, and your love gives meaning to every step I
+                        take. Thank you for being the most precious part of my life."</p>
+                </div>
+                <div class="message-card">
+                    <span class="corner-heart ch-tl">❦</span><span class="corner-heart ch-tr">❦</span><span class="corner-heart ch-bl">❦</span><span class="corner-heart ch-br">❦</span>
+                    <p>"Through every challenge and every victory, you've been my safe place, my comfort, and my
+                        happiness. Babbyy, your love inspires me to become a better person every day. I am endlessly
+                        grateful for every memory we've created together."</p>
+                </div>
+                <div class="message-card">
+                    <span class="corner-heart ch-tl">❦</span><span class="corner-heart ch-tr">❦</span><span class="corner-heart ch-bl">❦</span><span class="corner-heart ch-br">❦</span>
+                    <p>"No matter how many stars fill the sky, none of them shine as brightly as you do in my heart.
+                        Katrina, you are my greatest blessing, my favorite person, and my forever love. I will always
+                        choose you, today and every day."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= REASONS ================= -->
+        <section id="reasons" class="section fade-up" style="display:none;">
+            <h2 class="section-title">18 Reasons Why I Love You</h2>
+            <div class="section-divider"></div>
+            <div class="reasons-grid">
+                <div class="reason-card">1. Your beautiful smile.</div>
+                <div class="reason-card">2. Your caring heart.</div>
+                <div class="reason-card">3. Your kindness.</div>
+                <div class="reason-card">4. Your loyalty.</div>
+                <div class="reason-card">5. Your understanding nature.</div>
+                <div class="reason-card">6. Your laughter.</div>
+                <div class="reason-card">7. Your support.</div>
+                <div class="reason-card">8. Your honesty.</div>
+                <div class="reason-card">9. Your patience.</div>
+                <div class="reason-card">10. Your sweetness.</div>
+                <div class="reason-card">11. Your confidence.</div>
+                <div class="reason-card">12. Your intelligence.</div>
+                <div class="reason-card">13. Your beautiful eyes.</div>
+                <div class="reason-card">14. Your thoughtfulness.</div>
+                <div class="reason-card">15. Your positivity.</div>
+                <div class="reason-card">16. Your uniqueness.</div>
+                <div class="reason-card">17. Your love.</div>
+                <div class="reason-card">18. Simply because you're Katrina.</div>
+            </div>
+        </section>
+
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="">
+    </div>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Jerome &amp; Katrina | Happy Anniversary, Babbyy <span class="pulsing-heart">❤️</span></p>
+            <p class="footer-quote">"Together under the same stars, forever in each other's hearts."</p>
+        </div>
+    </footer>
+
+    <script src="script.js?v=10"></script>
+
+</body>
+
+</html>
